@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Label fx:id="welcomeMessage" layoutX="96.0" layoutY="27.0" text="Username's Photo Gallery" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="albumListView" editable="true" layoutX="41.0" layoutY="94.0" prefHeight="254.0" prefWidth="200.0" />
+      <Button fx:id="openAlbum" layoutX="300.0" layoutY="295.0" mnemonicParsing="false" onAction="#albumOpen" text="Open" />
+      <Button fx:id="deleteAlbum" layoutX="457.0" layoutY="295.0" mnemonicParsing="false" onAction="#deleteAlbum" text="Delete" />
+      <Button fx:id="newAlbum" layoutX="42.0" layoutY="360.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="26.0" prefWidth="89.0" text="New Album" />
+      <Label fx:id="selectedAlbumName" layoutX="333.0" layoutY="109.0" text="" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedAlbumPhotos" layoutX="355.0" layoutY="151.0" text="" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedAlbumDates" layoutX="266.0" layoutY="200.0" text="" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="renameAlbum" layoutX="140.0" layoutY="361.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="26.0" prefWidth="102.0" text="Rename Album" />
+   </children>
+</AnchorPane>
