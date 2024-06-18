@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AlbumController">
+   <children>
+      <ListView fx:id="photosListView" layoutX="8.0" layoutY="124.0" prefHeight="200.0" prefWidth="584.0" />
+      <ButtonBar layoutX="24.0" layoutY="336.0" prefHeight="40.0" prefWidth="229.0">
+        <buttons>
+          <Button fx:id="openPhoto" mnemonicParsing="false" onAction="#openPhoto" text="Open" />
+            <Button fx:id="deletePhoto" mnemonicParsing="false" onAction="#deletePhoto" text="Delete" />
+            <Button fx:id="movePhoto" mnemonicParsing="false" onAction="#movePhoto" text="Move" />
+            <Button fx:id="copyPhoto" mnemonicParsing="false" onAction="#copyPhoto" text="Copy" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="albumBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="addPhotoButton" layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onAction="#addPhoto" text="Add Photo" />
+      <Button fx:id="createResultsButton" layoutX="389.0" layoutY="343.0" mnemonicParsing="false" onAction="#createFromResults" text="Create Album From Results" />
+      <Label fx:id="albumNameLabel" layoutX="179.0" layoutY="11.0" text="Album Name">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="numPhotos" layoutX="15.0" layoutY="97.0" text="# Photos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="photoDates" layoutX="377.0" layoutY="97.0" text="">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="523.0" layoutY="52.0" mnemonicParsing="false" onAction="#startSearch" text="Search" />
+   </children>
+</AnchorPane>
